@@ -1,0 +1,14 @@
+{
+  "name": "tradenexaai-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs",
+    "test": "node --test tests/server.test.mjs && node tests/trading.test.cjs && node tests/tools.test.cjs && node tests/connection.test.cjs",
+    "setup:secret": "node scripts/generate-secret.mjs"
+  }
+}
